@@ -1,0 +1,34 @@
+
+Trục Kb ngang ở dưới đất (từ dưới đất bay lên) :
+h (horizontal) : 
+
+Trục Kb dọc ở dưới đất (từ dưới đất bay lên) :
+v (vertical) :
+
+Trục Kb ngang ở trên không (trên không bay lên) :
+h_a (horizontal_air) :
+
+Trục Kb dọc ở trên không (trên không bay lên) :
+v_a (vertical_air) :
+
+===
+Tốc độ của player khi bấm w : 4.31b/s
+
+Tốc độ của player khi bấm w + ctrl : 5.61b/s
+
+0.20s bằng 1/5 giây.
+
+Khoảng cách cho phép tấn công của player đến đối phương là : 3 blocks
+
+Thời gian nhấp nhả w (hoặc nhấp nhả w, nhưng luôn giữ ctrl) lý tưởng cho player nên là : 0.25s (Nên cho phép từ 0.20s -> 0.30s)
+=> mỗi lần nhấp nhả w của player trong 0.20s => (4.31/5) => 0.862b
+=> mỗi lần nhấp nhả w của player trong 0.30s => (4.31/(10/3)) => 1.293b
+=> mỗi lần nhấp nhả w + ctrl của player trong 0.20s => (5.61/5) => 1.122b
+=> mỗi lần nhấp nhả w + ctrl của player trong 0.30s => (5.61/(10/3)) => 1.683b
+Vậy khoảng cách mà 1 player hold được combo bằng w-tap mỗi lần di chuyển tiến (hoặc ctrl + w-tap) là : từ 0.862b đến 1.683b. (khoảng cách từ min đến max là 0.821b)
+
+
+chiều cao của hitbox player là : 1.8b
+chiều rộng của hitbox player là : 0.6b
+
+Chiều cao của phần mắt (gốc raycast của player) là : 1.62b
