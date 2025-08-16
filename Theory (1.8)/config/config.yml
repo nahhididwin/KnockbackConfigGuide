@@ -1,1 +1,67 @@
+# ==============================================================
 
+# default :
+
+# use this to start PvP
+horizontal : 
+vertical :
+
+# use this to hold combo (keep enemy in the air)
+horizontal_air :
+vertical_air :
+
+# ==============================================================
+
+# Carbon Spigot :
+
+  BOXING:
+    TYPE: DETAILED
+    # Horizontal Multiplier
+    HORIZONTAL: 
+    # Vertical Value
+    VERTICAL: 
+    # Add a certain value to horizontal before actual calculations
+    INHERIT-H-ENABLED: true
+    INHERIT-H-VALUE: 
+    # Add a certain value to vertical before actual calculations
+    INHERIT-V-ENABLED: false
+    INHERIT-V-VALUE: 
+    # Friction values, actual knockback is divided by this
+    FRICTION-H: 
+    FRICTION-V: 
+    # When player is hit but on ground, this value is multiplied with initial kb
+    GROUND-H: 
+    GROUND-V: 
+    # When player is hit but attacker is spriting, this value is multiplied with initial kb
+    SPRINT-H: 
+    SPRINT-V:
+    # Should we dynamically limit player's vertical axis?
+    Y-LIMIT: true
+    # Dynamic vertical axis limit value
+    Y-LIMIT-VALUE: 
+    # Should the attacker have their sprint reset upon attacking
+    STOP-SPRINT: true
+    # This value is multiplied in horizontal axis after calculations and sprint reset
+    SLOWDOWN: 
+    COMBO:
+      # Toggle combo mode
+      ENABLED: false
+      # This is used to track when to move player back down from y axis
+      TICKS: 
+      # Horizontal velocity of a player in combo mode
+      VELOCITY:
+      # Vertical velocity of a player in combo mode
+      HEIGHT:
+    DAMAGE-TICKS:
+      # Override vanilla damage ticks with carbon's
+      OVERRIDE: true
+      # The delay between a player's ability to damage an entity
+      VALUE: 
+      # Disables damage ticks for rods and arrows
+      BETTER-DETECTION: false
+    PROJECTILES:
+      Y-LIMIT:
+        # Should we limit projectile's vertical kb?
+        ENABLED: true
+        # Vertical limit value of projectiles
+        VALUE: 
